@@ -164,3 +164,19 @@ particlesJS({
   },
   retina_detect: true,
 });
+
+// Typed JS
+const typedJS = document.querySelector("#typed-js");
+// Saya seorang <span class="text-primary dark:text-white">Web Developer</span>
+let typed = new Typed(typedJS, {
+  strings: [
+    "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Android Developer",
+  ],
+  typeSpeed: 50,
+  backSpeed: 20,
+  smartBackspace: true, // this is a default
+  loop: true,
+});
