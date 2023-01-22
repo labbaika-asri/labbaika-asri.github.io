@@ -30,3 +30,40 @@ body {
 #dark-mode:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.timeline {
+  @apply relative z-10 m-auto mt-16 w-full px-8;
+}
+
+.timeline:after {
+  @apply absolute top-0 bottom-0 -z-10 block h-[130%] w-1 rounded-lg bg-slate-600 content-[''] md:left-[50%];
+}
+
+.chat-box {
+  @apply relative ml-12 mb-5 max-w-[400px] rounded-lg bg-primary py-4 px-5 text-white  shadow-md dark:shadow-md dark:shadow-slate-600 md:max-w-[254px] lg:max-w-[360px];
+}
+
+.chat-box:after {
+  @apply absolute -left-[60px] top-3 z-10 rounded-full border-2 border-primary bg-white p-1 text-black content-['\f0b1'];
+  font: var(--fa-font-solid);
+}
+
+.chat-box:before {
+  @apply absolute -left-4 top-[13px] z-10 block border-t-[13px] border-r-[17px] border-b-[13px] border-t-transparent border-b-transparent border-r-primary content-[""];
+}
+
+.chat-box:nth-child(odd) {
+  @apply md:ml-[50%] md:translate-x-[48.5px];
+}
+
+.chat-box:nth-child(even) {
+  @apply md:ml-[50%] md:-translate-x-[298px] lg:-translate-x-[404px];
+}
+
+.chat-box:nth-child(even):after {
+  @apply md:left-[286px] lg:left-[392px];
+}
+
+.chat-box:nth-child(even):before {
+  @apply md:left-[254px] md:rotate-180 lg:left-[360px];
+}
