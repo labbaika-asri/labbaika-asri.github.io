@@ -36,7 +36,7 @@ body {
 }
 
 .timeline:after {
-  @apply absolute top-0 bottom-0 -z-10 block h-[130%] w-1 rounded-lg bg-slate-600 content-[''] md:left-[50%];
+  @apply absolute top-0 bottom-0 -z-10 block h-[100%] w-1 rounded-lg bg-slate-600 content-[''] md:left-[50%];
 }
 
 .chat-box {

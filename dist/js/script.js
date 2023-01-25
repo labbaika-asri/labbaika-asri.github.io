@@ -167,7 +167,6 @@ particlesJS({
 
 // Typed JS
 const typedJS = document.querySelector("#typed-js");
-// Saya seorang <span class="text-primary dark:text-white">Web Developer</span>
 let typed = new Typed(typedJS, {
   strings: [
     "Web Developer",
@@ -179,4 +178,12 @@ let typed = new Typed(typedJS, {
   backSpeed: 20,
   smartBackspace: true, // this is a default
   loop: true,
+});
+
+// Custom whatsapp message
+const whatsappButton = document.querySelector("#send-whatsapp");
+const nameInput = document.querySelector("#name");
+const messageInput = document.querySelector("#message");
+whatsappButton.addEventListener("click", function (e) {
+  whatsappButton.href = `https://api.whatsapp.com/send?phone=62895618701180&text=Halo nama saya ${nameInput.value}, ${messageInput.value}`;
 });
