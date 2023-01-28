@@ -15,13 +15,14 @@ window.onscroll = function () {
 // Hamburger
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
-hamburger.addEventListener("click", function () {
+// Klik di Hamburger
+hamburger.addEventListener("click", function (e) {
+  e.stopPropagation();
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
-
-// Klik diluar Hamburger
 window.addEventListener("click", function (e) {
+  // Klik di luar Hamburger
   if (e.target != hamburger && e.target != navMenu) {
     hamburger.classList.remove("hamburger-active");
     navMenu.classList.add("hidden");

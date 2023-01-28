@@ -16,15 +16,15 @@ body {
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply rotate-45;
+  @apply translate-x-[5px] rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
-  @apply scale-0;
+  @apply translate-x-[5px] scale-0;
 }
 
 .hamburger-active > span:nth-child(3) {
-  @apply -rotate-45;
+  @apply translate-x-[5px] translate-y-[1px] -rotate-45;
 }
 
 #dark-mode:checked ~ label div.toggle-circle {
