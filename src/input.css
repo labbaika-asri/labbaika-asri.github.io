@@ -11,6 +11,11 @@ body {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
+nav ul li a:hover,
+nav ul li a.active {
+  @apply text-primary lg:border-b-2 lg:border-primary;
+}
+
 .hamburger-line {
   @apply my-2 block h-[2px] w-[30px] bg-dark transition duration-300 ease-in-out dark:bg-white;
 }

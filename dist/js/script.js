@@ -3,6 +3,7 @@ window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
   const toTop = document.querySelector("#to-top");
+
   if (window.pageYOffset > fixedNav) {
     header.classList.add("navbar-fixed");
     toTop.classList.remove("translate-y-32");
@@ -10,6 +11,28 @@ window.onscroll = function () {
     header.classList.remove("navbar-fixed");
     toTop.classList.add("translate-y-32");
   }
+
+  let sections = document.querySelectorAll("section");
+  let menuNavbar = document.querySelectorAll("nav ul li a");
+
+  sections.forEach((section) => {
+    let height = section.offsetHeight;
+    let top = section.offsetTop;
+    let offset = top - 200;
+    let id = section.getAttribute("id");
+
+    if (window.pageYOffset > offset && window.pageYOffset < offset + height) {
+      console.log("ok");
+      menuNavbar.forEach((menu) => {
+        let link = menu.href.split("#")[1];
+        if (id == link) {
+          menu.classList.add("active");
+        } else {
+          menu.classList.remove("active");
+        }
+      });
+    }
+  });
 };
 
 // Hamburger
