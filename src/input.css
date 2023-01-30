@@ -13,7 +13,7 @@ body {
 
 nav ul li a:hover,
 nav ul li a.active {
-  @apply text-primary lg:border-b-2 lg:border-primary;
+  @apply text-primary dark:text-primary lg:border-b-2 lg:border-primary;
 }
 
 .hamburger-line {

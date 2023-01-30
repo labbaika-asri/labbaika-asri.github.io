@@ -953,7 +953,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -1151,7 +1151,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .text-dark {
@@ -1285,7 +1285,13 @@ body {
 nav ul li a:hover,
 nav ul li a.active {
   --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
+  color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
+.dark nav ul li a:hover,.dark 
+nav ul li a.active {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -1293,7 +1299,7 @@ nav ul li a.active {
 nav ul li a.active {
     border-bottom-width: 2px;
     --tw-border-opacity: 1;
-    border-color: rgb(20 184 166 / var(--tw-border-opacity));
+    border-color: rgb(16 185 129 / var(--tw-border-opacity));
   }
 }
 
@@ -1380,7 +1386,7 @@ nav ul li a.active {
   max-width: 400px;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.25rem;
@@ -1420,7 +1426,7 @@ nav ul li a.active {
   border-radius: 9999px;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 0.25rem;
@@ -1443,7 +1449,7 @@ nav ul li a.active {
   border-top-color: transparent;
   border-bottom-color: transparent;
   --tw-border-opacity: 1;
-  border-right-color: rgb(20 184 166 / var(--tw-border-opacity));
+  border-right-color: rgb(16 185 129 / var(--tw-border-opacity));
   --tw-content: "";
   content: var(--tw-content);
 }
@@ -1507,12 +1513,12 @@ nav ul li a.active {
 
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
 }
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-black:hover {
@@ -1531,7 +1537,7 @@ nav ul li a.active {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-80:hover {
@@ -1557,7 +1563,7 @@ nav ul li a.active {
 
 .focus\:ring-primary:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(20 184 166 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(16 185 129 / var(--tw-ring-opacity));
 }
 
 @keyframes bounce {
@@ -1659,7 +1665,7 @@ nav ul li a.active {
 
 .dark .dark\:hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
