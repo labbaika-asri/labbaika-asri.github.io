@@ -1,3 +1,15 @@
+// Favicon
+const favicon = document.querySelector("#favicon");
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    document.title = "Portfolio | Labbaika Asri";
+    favicon.href = "dist/img/favicon.png";
+  } else {
+    document.title = "Come Back To Portfolio";
+    favicon.href = "dist/img/favhand.png";
+  }
+});
+
 // Navbar fixed
 window.onscroll = function () {
   const header = document.querySelector("header");
@@ -22,7 +34,6 @@ window.onscroll = function () {
     let id = section.getAttribute("id");
 
     if (window.pageYOffset > offset && window.pageYOffset < offset + height) {
-      console.log("ok");
       menuNavbar.forEach((menu) => {
         let link = menu.href.split("#")[1];
         if (id == link) {
