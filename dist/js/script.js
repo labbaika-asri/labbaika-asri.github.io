@@ -215,6 +215,16 @@ let typed = new Typed(typedJS, {
   loop: true,
 });
 
+// Vanila Tilt JS
+VanillaTilt.init(document.querySelectorAll(".vanila-tilt"), {
+  max: 15,
+  speed: 100,
+  glare: true,
+  reverse: true,
+  "max-glare": 0.2,
+  scale: 1.08,
+});
+
 // Custom whatsapp message
 const whatsappButton = document.querySelector("#send-whatsapp");
 const nameInput = document.querySelector("#name");

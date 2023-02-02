@@ -1348,6 +1348,18 @@ nav ul li a.active {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+#skills .vanila-tilt {
+  transform-style: preserve-3d;
+}
+
+#skills .vanila-tilt > img {
+  transform: translateZ(50px);
+}
+
+#skills .vanila-tilt > h6 {
+  transform: translateZ(25px);
+}
+
 .timeline {
   position: relative;
   z-index: 10;

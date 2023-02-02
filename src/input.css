@@ -36,6 +36,18 @@ nav ul li a.active {
   @apply translate-x-3;
 }
 
+#skills .vanila-tilt {
+  transform-style: preserve-3d;
+}
+
+#skills .vanila-tilt > img {
+  transform: translateZ(50px);
+}
+
+#skills .vanila-tilt > h6 {
+  transform: translateZ(25px);
+}
+
 .timeline {
   @apply relative z-10 m-auto mt-16 w-full px-8;
 }
